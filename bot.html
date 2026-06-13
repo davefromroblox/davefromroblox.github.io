@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands | @certified.dave</title>
+    <link rel="stylesheet" href="assets/common.css">
+<style>
+    body {
+    font-family: "gg sans", "Noto Sans", Arial, sans-serif;
+    margin: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 28px;
+}
+
+.bot-intro-card {
+    color: #ffffff;
+    background: #1e1f22;
+    border: 1px solid #1f2023;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+}
+
+.bot-intro-card h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.commands-section-title {
+    color:#1f2023;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.commands-subtitle {
+    color: #636466;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.command-block {
+    padding: 18px 0;
+    border-bottom: 1px solid #1f2023;
+}
+
+.cmd-name {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 14px;
+    color: #003a0a;
+    margin-bottom: 6px;
+    font-weight: bolder;
+}
+
+.cmd-desc {
+    color: #383838;
+    font-size: 14px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.cmd-usage {
+    font-family: ui-monospace, monospace;
+    font-size: 12px;
+    color: #000000;
+    margin-top: 6px;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.badge-req {
+    background: #da373c;
+    color: #fff;
+}
+
+.badge-opt {
+    background: #4e5058;
+    color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 style="color:inherit"><a href="index.html">@certified.dave | 🤓</a></h1>
+    <div class="main-content">
+
+        <div class="bot-intro-card">
+            <h2>Rolevinio</h2>
+            <p>
+                bot manages role assignments, approvals, and audit logs in ireland
+            </p>
+        </div>
+
+        <div class="commands-section-title">Commands</div>
+        <div class="commands-subtitle">Reference for all available bot commands</div>
+
+        <!-- COMMAND BLOCKS -->
+        <div class="command-block">
+            <div class="cmd-name">/history</div>
+            <p class="cmd-desc">
+                View a user’s role change history. Requires admin or manager permissions.
+            </p>
+            <div class="cmd-usage">Usage: /history user limit</div>
+            <div class="cmd-args">
+                <span class="badge badge-req">user</span>
+                <span class="badge badge-opt">limit</span>
+            </div>
+        </div>
+
+        <div class="command-block">
+            <div class="cmd-name">/requestrole</div>
+            <p class="cmd-desc">
+                Submit a role request for approval. Sends the request to the server’s approval channel.
+            </p>
+            <div class="cmd-usage">Usage: /requestrole user role reason</div>
+            <div class="cmd-args">
+                <span class="badge badge-req">user</span>
+                <span class="badge badge-req">role</span>
+                <span class="badge badge-req">reason</span>
+            </div>
+        </div>
+
+        <div class="command-block">
+            <div class="cmd-name">/role</div>
+            <p class="cmd-desc">
+                Add or remove roles with validation checks to prevent unsafe or unauthorized changes.
+            </p>
+            <div class="cmd-usage">Usage: /role add|remove user role reason</div>
+            <div class="cmd-args">
+                <span class="badge badge-req">add / remove</span>
+                <span class="badge badge-req">user</span>
+                <span class="badge badge-req">role</span>
+                <span class="badge badge-req">reason</span>
+            </div>
+        </div>
+
+        <div class="command-block">
+            <div class="cmd-name">/config</div>
+            <p class="cmd-desc">
+                Configure bot settings such as logging channels, manager roles, and safety rules.
+            </p>
+            <div class="cmd-usage">Usage: /config option value</div>
+        </div>
+
+    </div>
+
+        <a href="https://stats.uptimerobot.com/uk4VJikmNj" target="_blank" style="text-decoration:none;">
+  <div style="
+    max-width: 900px;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #111;"">
+
+    <div style="padding: 12px 16px; color: white;">
+      <div style="font-size: 16px; font-weight: 600;">System Status</div>
+      <div style="font-size: 13px; opacity: 0.7;">
+        Click to view live uptime report
+      </div>
+    </div>
+
+  </div>
+</a>
+
+
+    <div style="text-align:center; margin-top: 20px;">Daveids © 2024</div>
+
+</div>
+
+<script src="msassets/common.js"></script>
+</body>
+</html>
